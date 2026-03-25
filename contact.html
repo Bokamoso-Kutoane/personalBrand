@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Me</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header>
+      <div class="logo">BOK</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="spacer"></div>
+
+    <section class="contact">
+      <h1>Let’s Work Together</h1>
+      <p>If you would like to discuss opportunities, here’s how you can reach me:</p>
+
+      <div class="contact-buttons">
+        <a href="mailto:kutoanebokamoso505@gmail.com" class="contact-btn gmail" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/+27612713381" class="contact-btn whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/yourlinkedin" class="contact-btn linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <div class="contact-info">
+        <h2>Contact Info</h2>
+        <p><strong>Email:</strong> kutoanebokamoso505@gmail.com</p>
+        <p><strong>Phone:</strong> +27 612713381</p>
+        <p><strong>Location:</strong> Cape Town, South Africa</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a></p>
+      </div>
+
+
+      <button class="share-btn" onclick="copyPortfolioLink()">🔗 Share My Portfolio</button>
+
+      <form class="contact-form">
+        <h2>Quick Message</h2>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+
+      <p class="note">I hope to hear from you</p>
+    </section>
+
+    <script>
+      function copyPortfolioLink() {
+        navigator.clipboard.writeText(window.location.origin + '/try2.html');
+        alert("Portfolio link copied!");
+      }
+    </script>
+
+    <footer>
+      <nav class="footer-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#top" class="back-to-top">Back to Top</a></li>
+        </ul>
+      </nav>
+      <div class="footer-info">
+        <p class="logo">BOK</p>
+        <p>&copy; 2025 Bokamoso Kutoane Portfolio. All Rights Reserved.</p>
+        <p>Email: <a href="mailto:kutoanebokamoso505@gmail.com">kutoanebokamoso505@gmail.com</a></p>
+      </div>
+    </footer>
+
+  </body>
+</html>
+

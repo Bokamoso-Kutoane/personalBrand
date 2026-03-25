@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="logo">BOK</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="spacer"></div>
+
+<section class="gallery">
+  <div class="thumbs">
+    <!-- PDF projects -->
+    <img src="Figma-logo.svg" data-type="pdf" data-file="Visuals.pdf" data-title="WebApp UI" data-desc="Interactive web application UI designed in Figma." alt="Figma logo">
+    
+    <img src="StudyQUestLogo.svg" data-type="pdf" data-file="StudyQuestBrandGuide.pdf" data-title="Study Quest" data-desc="Full brand guide PDF including logo, patterns, and brand guidelines." alt="StudyQuest logo">
+    
+    <img src="NiteBowl2.svg" data-type="pdf" data-file="NiteBowlBrandGuide.pdf" data-title="NiteBowl Mini Brand Guide" data-desc="Smaller PDF brand guide with logos, vision, and mission statements." alt="NiteBowl logo">
+  </div>
+
+  <div class="overlay" id="overlay">
+    <span class="close">&times;</span>
+    <div class="overlay-content">
+      <div id="overlay-main"></div>
+      <div class="overlay-text">
+        <h2 id="overlay-title"></h2>
+        <p id="overlay-desc-text"></p>
+        <a id="overlay-download" href="#" download style="display:none;">
+          <button>Download PDF</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+    <footer>
+      <nav class="footer-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#top" class="back-to-top">Back to Top</a></li>
+        </ul>
+      </nav>
+      <div class="footer-info">
+        <p class="logo">BOK</p>
+        <p>&copy; 2025 Bokamoso Kutoane Portfolio. All Rights Reserved.</p>
+        <p>Email: <a href="mailto:kutoanebokamoso505@gmail.com">kutoanebokamoso505@gmail.com</a></p>
+      </div>
+    </footer>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
+
